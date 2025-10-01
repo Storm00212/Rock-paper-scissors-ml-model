@@ -1,0 +1,32 @@
+{
+"compilerOptions": {
+/* File structure */
+"rootDir": "./rps-model/src",
+"outDir": "./dist",
+
+
+/* Module system */
+"target": "es2019",
+"module": "commonjs",
+"moduleResolution": "node",
+"esModuleInterop": true,
+
+/* Type safety */
+"strict": true,
+"forceConsistentCasingInFileNames": true,
+"noUncheckedIndexedAccess": true,
+"exactOptionalPropertyTypes": true,
+
+/* Debugging & output */
+"sourceMap": true,
+"declaration": true,
+"declarationMap": true,
+
+/* Performance */
+"skipLibCheck": true
+
+
+},
+"include": ["rps-model/src/**/*"],
+"exclude": ["node_modules", "dist"]
+}

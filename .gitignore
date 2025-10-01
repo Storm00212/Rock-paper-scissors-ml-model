@@ -1,0 +1,31 @@
+# Node.js
+
+node_modules/
+dist/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript
+
+*.tsbuildinfo
+
+# TensorFlow model artifacts
+
+rps-model/
+*.h5
+*.pb
+*.ckpt
+checkpoint
+
+# Dataset (large files not tracked in Git)
+
+dataset/
+
+# IDE / Editor
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
