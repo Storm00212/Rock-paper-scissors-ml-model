@@ -13,7 +13,7 @@ yarn-error.log*
 
 # TensorFlow model artifacts
 
-rps-model/
+
 *.h5
 *.pb
 *.ckpt
