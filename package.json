@@ -1,1 +1,40 @@
-{"name":"rps-ai","version":"1.0.0","description":"Rock Paper Scissors Image Prediction with TypeScript + TensorFlow.js","main":"dist/index.js","scripts":{"train":"ts-node rps-model/src/train.ts","build":"tsc && parcel build rps-model/src/predict.ts --out-dir dist --out-file predict.js","start":"node dist/index.js","predict":"ts-node rps-model/src/predict.ts","serve":"http-server . -p 8080"},"dependencies":{"@tensorflow/tfjs":"^4.20.0","@tensorflow/tfjs-backend-webgl":"^4.22.0","@tensorflow/tfjs-node":"^4.20.0","fs":"^0.0.1-security","image-js":"^1.0.0","path":"^0.12.7","sharp":"^0.34.4"},"devDependencies":{"@types/node":"^20.0.0","http-server":"^14.1.1","parcel":"^2.16.0","ts-node":"^10.9.2","typescript":"^5.6.3"}}
+{
+  "name": "rps-ai",
+  "version": "1.0.0",
+  "description": "Rock Paper Scissors Image Prediction with TypeScript + TensorFlow.js",
+  "scripts": {
+    "train": "ts-node rps-model/src/train.ts",
+    "build": "tsc && parcel build rps-model/src/predict.ts --out-dir dist --out-file predict.js",
+    "start": "node dist/index.js",
+    "predict": "ts-node rps-model/src/predict.ts",
+    "serve": "http-server . -p 8080",
+    "dev": "parcel src/index.html --open",
+    "build-react": "parcel build src/index.html --out-dir dist --out-file index.html"
+  },
+  "dependencies": {
+    "@mediapipe/hands": "^0.4.1675469240",
+    "@tensorflow/tfjs": "^4.20.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.22.0",
+    "@tensorflow/tfjs-node": "^4.20.0",
+    "fs": "^0.0.1-security",
+    "image-js": "^1.0.0",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-webcam": "^7.2.0",
+    "sharp": "^0.34.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.21",
+    "buffer": "^6.0.3",
+    "http-server": "^14.1.1",
+    "parcel": "^2.16.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
